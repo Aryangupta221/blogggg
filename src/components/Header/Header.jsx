@@ -22,7 +22,7 @@ function Header() {
         <nav className="flex items-center justify-between">
           <div className="mr-6">
             <Link to="/">
-              <Logo width="40px" className="transition-smooth hover:opacity-80" />
+              <Logo width="70px" className="transition-smooth hover:opacity-80" />
             </Link>
           </div>
           <ul className="flex items-center space-x-2">
