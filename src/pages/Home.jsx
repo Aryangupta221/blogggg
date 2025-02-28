@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import appwriteService from '../appwrite/config';
 import { Container, PostCard } from '../components';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 function Home() {
   const [posts, setPosts] = useState([]);
@@ -36,9 +37,9 @@ function Home() {
           </p>
           {!authStatus && (
             <div className="mt-6">
-              <a href="/login" className="inline-block px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-smooth">
+              <Link to="/login" className="inline-block px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-smooth">
                 Log In to Start Blogging
-              </a>
+                </Link> 
             </div>
           )}
         </section>
