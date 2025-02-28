@@ -64,7 +64,7 @@ function Home() {
         ) : (
           <div className="w-full py-8 mt-4 text-center">
             <h1 className="text-2xl font-bold text-gray-600">
-              {authStatus ? 'No posts available yet. Create one now!' : 'Login to read posts'}
+              {authStatus ? 'No posts available yet. Create one now!' : ''}
             </h1>
             {authStatus && (
               <Link
