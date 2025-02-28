@@ -37,9 +37,12 @@ function Home() {
           </p>
           {!authStatus && (
             <div className="mt-6">
-              <Link to="/login" className="inline-block px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-smooth">
+              <Link
+                to="/login"
+                className="inline-block px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-smooth"
+              >
                 Log In to Start Blogging
-                </Link> 
+              </Link>
             </div>
           )}
         </section>
@@ -64,9 +67,12 @@ function Home() {
               {authStatus ? 'No posts available yet. Create one now!' : 'Login to read posts'}
             </h1>
             {authStatus && (
-              <a href="/add-post" className="mt-4 inline-block px-6 py-3 bg-green-500 text-white rounded-full hover:bg-green-600">
+              <Link
+                to="/add-post"
+                className="mt-4 inline-block px-6 py-3 bg-green-500 text-white rounded-full hover:bg-green-600"
+              >
                 Create Your First Post
-              </a>
+              </Link>
             )}
           </div>
         )}
