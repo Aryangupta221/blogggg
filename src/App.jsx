@@ -15,13 +15,13 @@ function App() {
       .getCurrentUser()
       .then((userData) => {
         if (userData) {
-          dispatch(login({ userData }));
+          dispatch(login(userData));
         } else {
           dispatch(logout());
         }
       })
       .finally(() => setLoading(false));
-  }, []);
+  }, [dispatch]);
 
   return !loading ? (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-100 to-gray-300 text-gray-800">
